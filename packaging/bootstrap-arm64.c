@@ -16,7 +16,6 @@ void _start()
         "mov x0, %0\n\t"
         "mov x1, %1\n\t"
         "mov x2, %2\n\t"
-        "mov x16, #0\n\t"
         "svc #0x80\n\t"
         :: "r"(filename), "r"(args), "r"(envp)
     );
